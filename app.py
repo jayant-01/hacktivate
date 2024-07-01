@@ -24,7 +24,9 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 
 # Initialize SQLAlchemy ORM
 db = SQLAlchemy(app)
-emails = set()
+final_email_list = set()
+emails=set()
+
 
 # Define database models
 class User(db.Model):
@@ -97,7 +99,7 @@ def dashboard():
             return render_template('dashboard.html', campaigns=campaigns)
 
 
-    return render_template('dashboard.html', campaigns=campaigns)
+    return render_template('dashboard.html', campaigns=campaigns,resources=final_email_list)
 
 @app.route('/new_campaign', methods=['GET', 'POST'])
 def new_campaign():
@@ -152,7 +154,7 @@ def custom_scrape_emails_from_url(url):
                 emails.update(custom_scrape_emails_from_url(href))  # Recursively scrape subdomains
     except Exception as e:
         print(f"Failed to scrape {url}: {e}")
-    print(emails)
+    # print(emails)
     return emails
 
 @app.route('/scrape_emails', methods=['POST'])
@@ -173,7 +175,6 @@ def scrape_emails():
             response = requests.get(url)
             soup = BeautifulSoup(response.text, 'html.parser')
             email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
-            emails = set()
 
             for string in soup.stripped_strings:
                 matches = re.findall(email_pattern, string)
@@ -199,13 +200,16 @@ def scrape_emails():
                     for email in new_emails:
                         print(email)
                         emails.add(email)
+                        file_path="data.txt"
+                        with open(file_path, mode='w') as file:
+                            print(emails)
+                            for email in emails:
+                                final_email_list.add(email)
+                                print(email)
+                                file.write(email + "\n")
+
                     emails_found.update(emails)
-                    file_path="recipients.txt"
-                    with open(file_path, mode='w+') as file:
-                        print(emails)
-                        for email in emails:
-                            print(email)
-                            file.write(email + "\n")
+                    
 
                 for link in soup.find_all('a', href=True):
                     absolute_url = urljoin(url, link['href'])
