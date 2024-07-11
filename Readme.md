@@ -1,5 +1,4 @@
 
----
 
 # 🐟 Automated Phishing Campaigns Using AI
 
@@ -89,7 +88,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 📧 Contact
 
-For any queries or support, please contact [your-email@example.com](mailto:your-email@example.com).
+For any queries or support, please contact [your-email@example.com](mailto:khansaad1275@gmail.com).
 
 ---
 
