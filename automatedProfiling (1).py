@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 # Hunter.io API Key
-HUNTER_API_KEY = '4d4f9d12a263955ee3bca0bd6b2851a076e6ec8a'
+HUNTER_API_KEY = 'sdfghjklygtfdsdfghjklkjhg' #replace with your api key
 
 def find_email_hunter(domain, first_name, last_name):
     url = f'https://api.hunter.io/v2/email-finder?domain={domain}&first_name={first_name}&last_name={last_name}&api_key={HUNTER_API_KEY}'
