@@ -1,2 +1,8 @@
-help@gaana.com
-legal@gaana.com
+priority-support-in@stripe.com
+sales@stripe.com
+atlas@stripe.com
+privacy-acs@stripe.com
+complaints-in@stripe.com
+navin.grawal@example.com
+navodita.grawal@example.com
+LERequests@stripe.com

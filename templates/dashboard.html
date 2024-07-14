@@ -3,10 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        h1, h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .container h2 {
+            margin-top: 0;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        select, input[type="file"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ff7043;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff5722;
+        }
+        ul {
+            list-style-type: lower-roman;
+            padding: 0;
+            display: contents;
+        }
+        ul.active {
+            display: block;
+        }
+        ul li {
+            margin-bottom: 8px;
+            color: black;
+        }
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 8px 16px;
+            background-color: #ff7043;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        a:hover {
+            background-color: #ff5722;
+        }
+        h1{
+            color: #ff5722;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>Dashboard</h1>
-    <a href="/new_campaign">Add New Campaign</a>
+    <div><h1>Dashboard</h1>
+    <div><a href="/new_campaign">Add New Campaign</a></div>
     <h2>Campaigns</h2>
     <form action="/scrape_emails" method="post">
         <label for="domain">Select Campaign:</label>
@@ -38,6 +121,6 @@
         <input type="file" name="file" required>
         <button type="submit">Upload</button>
     </form>
-    
+    </div>
 </body>
 </html>

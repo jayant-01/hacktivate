@@ -170,7 +170,7 @@ def scrape_emails():
         
         visited_urls = set()
         emails_found = set()
-        max_pages_to_visit = 20
+        max_pages_to_visit = 10
         def extract_emails_from_url(url):
             response = requests.get(url)
             soup = BeautifulSoup(response.text, 'html.parser')
