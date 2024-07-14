@@ -16,7 +16,7 @@ import pandas as pd
 # Load environment variables from .env file
 load_dotenv()
 
-# Initialize Flask application and configure it
+# Initializi Flask application and configure it
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///campaigns.db'
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', os.urandom(24))
