@@ -81,6 +81,8 @@ This project is for educational and research purposes only. Misuse of this tool 
 ## 🤝 Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or new features.
+contributers :-  [**khan Saad Maqsood Ahmed**](mailto:khansaad1275@gmail.com)
+                 [**Mariyam Pankhania**](mailto:ms.pankhania@gmail.com)
 
 ## 📜 License
 
@@ -88,7 +90,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 📧 Contact
 
-For any queries or support, please contact [khansaad](mailto:khansaad1275@gmail.com).
+For any queries or support, please contact [khansaad](mailto:khansaad1275@gmail.com) [Mariyam Shaukat Pankhania](mailto:ms.pankhania@gmail.com) .
 
 ---
 
