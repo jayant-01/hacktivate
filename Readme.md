@@ -86,7 +86,7 @@ contributers :-  [**khan Saad Maqsood Ahmed**](mailto:khansaad1275@gmail.com)
                  [**Sameer Mohammed Khan**](mailto:ksameer7148@gmail.com)
 
 
-## contributers linkedin id's
+## contributers github id's
 [**khan Saad Maqsood Ahmed**](https://github.com/khansaad1275)
 [**Mariyam Pankhania**]()
 [**Sameer Mohammed Khan**](https://github.com/Xlar8)
